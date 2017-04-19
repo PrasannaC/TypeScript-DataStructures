@@ -1,24 +1,24 @@
-class LinkedListNode {
-    public next: LinkedListNode;
-    public previous: LinkedListNode;
-    public data: any;
+class LinkedListNode<T> {
+    public next: LinkedListNode<T>;
+    public previous: LinkedListNode<T>;
+    public data: T;
 
-    public constructor(data: any) {
+    public constructor(data: T) {
         this.data = data;
         this.next = null;
         this.previous = null;
     }
 }
 
-export class LinkedList {
+export class LinkedList<T> {
 
-    protected head: LinkedListNode;
+    protected head: LinkedListNode<T>;
     public constructor() {
 
     }
 
-    public addNode(data: any) {
-        var temp = new LinkedListNode(data);
+    public addNode(data: T) {
+        var temp = new LinkedListNode<T>(data);
         if (this.head == null) {
             this.head = temp;
         }
@@ -40,10 +40,10 @@ export class LinkedList {
     }
 }
 
-export class DoublyLinkedList extends LinkedList {
+export class DoublyLinkedList<T> extends LinkedList<T> {
 
-    public addNode(data: any) {
-        var temp = new LinkedListNode(data);
+    public addNode(data: T) {
+        var temp = new LinkedListNode<T>(data);
         if (this.head == null) {
             this.head = temp;
         }

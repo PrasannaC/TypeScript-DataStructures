@@ -7,7 +7,7 @@ class Program {
     }
 
     private static TestLinkedList() {
-        var list = new LinkedList();
+        var list = new LinkedList<number>();
         list.addNode(10);
         list.addNode(100);
         list.addNode(1000);
@@ -17,7 +17,7 @@ class Program {
     }
 
     private static TestDoublyLinkedList() {
-        var list = new DoublyLinkedList();
+        var list = new DoublyLinkedList<number>();
         list.addNode(10);
         list.addNode(100);
         list.addNode(1000);
