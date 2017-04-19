@@ -1,4 +1,4 @@
-class LinkedListNode<T> {
+export class LinkedListNode<T> {
     public next: LinkedListNode<T>;
     public previous: LinkedListNode<T>;
     public data: T;
@@ -17,7 +17,7 @@ export class LinkedList<T> {
 
     }
 
-    public addNode(data: T) {
+    public addNode(data: T) : void {
         var temp = new LinkedListNode<T>(data);
         if (this.head == null) {
             this.head = temp;
@@ -31,7 +31,7 @@ export class LinkedList<T> {
         }
     }
 
-    public printAll() {
+    public printAll() : void {
         var curr = this.head;
         while (curr != null) {
             console.log(curr.data);
@@ -42,7 +42,7 @@ export class LinkedList<T> {
 
 export class DoublyLinkedList<T> extends LinkedList<T> {
 
-    public addNode(data: T) {
+    public addNode(data: T) : void {
         var temp = new LinkedListNode<T>(data);
         if (this.head == null) {
             this.head = temp;
@@ -57,7 +57,7 @@ export class DoublyLinkedList<T> extends LinkedList<T> {
         }
     }
 
-    public printReverse() {
+    public printReverse() : void {
         var curr = this.head;
         while (curr.next != null) {
             curr = curr.next;
