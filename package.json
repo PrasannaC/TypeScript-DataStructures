@@ -1,0 +1,27 @@
+{
+  "name": "tsds",
+  "version": "1.0.0",
+  "description": "Typescript Datastructures implementation",
+  "main": "DataStructures/Main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PrasannaC/TypeScript-DataStructures.git"
+  },
+  "keywords": [
+    "Typescript",
+    "Node.js",
+    "datastructures"
+  ],
+  "author": "Prasann Choudhari (choulinux@gmail.com)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/PrasannaC/TypeScript-DataStructures/issues"
+  },
+  "homepage": "https://github.com/PrasannaC/TypeScript-DataStructures#readme",
+  "dependencies": {
+    "typescript": "^2.4.1"
+  }
+}
