@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/PrasannaC/TypeScript-DataStructures.svg?branch=master)](https://travis-ci.org/PrasannaC/TypeScript-DataStructures)
+
 # TypeScript-DataStructures
 An implementation of classic data structures in Typescript.
 
