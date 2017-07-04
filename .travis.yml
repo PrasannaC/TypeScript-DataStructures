@@ -1,0 +1,10 @@
+language: node_js
+sudo: enabled
+node_js:
+  - node
+before_script:
+  - npm install -g typescript
+script: tsc -p DataStructures/
+cache:
+  directories:
+    - node_modules
